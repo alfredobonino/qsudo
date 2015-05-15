@@ -19,6 +19,9 @@
   <property name="windowTitle">
    <string>qsudo</string>
   </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhHiddenText</set>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QPushButton" name="okButton">
     <property name="geometry">
@@ -66,6 +69,15 @@
     </property>
     <property name="focusPolicy">
      <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
+    </property>
+    <property name="text">
+     <string>ccccc</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
     </property>
     <property name="dragEnabled">
      <bool>true</bool>

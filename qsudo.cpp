@@ -11,7 +11,7 @@ qsudo::qsudo(QWidget *parent) :
    
 {
     ui->setupUi(this);
-    ui->rootPassword->setFocus();
+
 }
 
 qsudo::~qsudo()

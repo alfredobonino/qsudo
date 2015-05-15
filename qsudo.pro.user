@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 3.1.1, 2015-05-15T18:01:32. -->
+<!-- Written by QtCreator 3.1.1, 2015-05-15T18:19:37. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -197,8 +197,8 @@
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">qsudo</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/matoxos/Scrivania/qsudo/qsudo.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">qsudo2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/matoxos/Scrivania/git/qsudo/qsudo.pro</value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.CommandLineArguments"></value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.ProFile">qsudo.pro</value>
     <value type="bool" key="Qt4ProjectManager.Qt4RunConfiguration.UseDyldImageSuffix">false</value>
