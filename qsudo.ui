@@ -38,6 +38,9 @@
     <property name="text">
      <string>OK</string>
     </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
     <property name="default">
      <bool>true</bool>
     </property>
@@ -68,13 +71,13 @@
      </rect>
     </property>
     <property name="focusPolicy">
-     <enum>Qt::StrongFocus</enum>
+     <enum>Qt::ClickFocus</enum>
     </property>
     <property name="inputMethodHints">
-     <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
+     <set>Qt::ImhNone</set>
     </property>
     <property name="text">
-     <string>ccccc</string>
+     <string/>
     </property>
     <property name="echoMode">
      <enum>QLineEdit::Password</enum>
