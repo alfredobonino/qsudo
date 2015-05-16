@@ -38,12 +38,14 @@ public:
         qsudo->setWindowModality(Qt::WindowModal);
         qsudo->resize(414, 180);
         qsudo->setContextMenuPolicy(Qt::PreventContextMenu);
+        qsudo->setInputMethodHints(Qt::ImhHiddenText);
         centralWidget = new QWidget(qsudo);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         okButton = new QPushButton(centralWidget);
         okButton->setObjectName(QStringLiteral("okButton"));
         okButton->setGeometry(QRect(210, 110, 161, 51));
-        okButton->setFocusPolicy(Qt::NoFocus);
+        okButton->setFocusPolicy(Qt::StrongFocus);
+        okButton->setAutoDefault(true);
         okButton->setDefault(true);
         cancelButton = new QPushButton(centralWidget);
         cancelButton->setObjectName(QStringLiteral("cancelButton"));
@@ -52,7 +54,9 @@ public:
         rootPassword = new QLineEdit(centralWidget);
         rootPassword->setObjectName(QStringLiteral("rootPassword"));
         rootPassword->setGeometry(QRect(20, 57, 371, 31));
-        rootPassword->setFocusPolicy(Qt::StrongFocus);
+        rootPassword->setFocusPolicy(Qt::ClickFocus);
+        rootPassword->setInputMethodHints(Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData);
+        rootPassword->setEchoMode(QLineEdit::Password);
         rootPassword->setDragEnabled(true);
         rootPassword->setClearButtonEnabled(false);
         label = new QLabel(centralWidget);
@@ -74,6 +78,7 @@ public:
         qsudo->setWindowTitle(QApplication::translate("qsudo", "qsudo", 0));
         okButton->setText(QApplication::translate("qsudo", "OK", 0));
         cancelButton->setText(QApplication::translate("qsudo", "Cancel", 0));
+        rootPassword->setText(QString());
         label->setText(QApplication::translate("qsudo", "Insert root password:", 0));
     } // retranslateUi
 
