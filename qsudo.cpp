@@ -10,6 +10,7 @@ qsudo::qsudo(QWidget *parent) :
     ui(new Ui::qsudo)
    
 {
+
     ui->setupUi(this);
 
 }
