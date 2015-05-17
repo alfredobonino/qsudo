@@ -1,7 +1,5 @@
 QSudo - a lightweight graphical sudo
 ==================================================
-Dependencies:
-only qt5
 For install:
 qmake && make && sudo make install
 
