@@ -4,7 +4,7 @@ For install:
 qmake && make && sudo make install
 
 =========
-Use qsudo, in programs use gksu:
+for use qsudo, in programs use gksu:
 
 Uninstall gksu.
 
