@@ -14,7 +14,6 @@ qsudo::qsudo(QWidget *parent) :
     ui->setupUi(this);
 
 }
-
 qsudo::~qsudo()
 {
     delete ui;
@@ -24,11 +23,16 @@ void qsudo::on_cancelButton_clicked() {
 
 }
 
+
 void qsudo::on_okButton_clicked() {
+
     QProcess *process;
     process = new QProcess();
-    QString command = "echo " + ui->rootPassword->text() + " | sudo -S " + program;
-    process->startDetached("/bin/bash", QStringList() << "-c" << command);
-    process->close();
+    QString command = "sudo " + program;
+    QString pass = ui->rootPassword->text();
+    QByteArray password = pass.toUtf8();
+    process->start(command);
+    process->write(password + "\n");
+    process->waitForFinished(1);
     qsudo::QMainWindow::close();
 }
