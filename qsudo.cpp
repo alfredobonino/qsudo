@@ -28,7 +28,7 @@ void qsudo::on_okButton_clicked() {
 
     QProcess *process;
     process = new QProcess();
-    QString command = "sudo " + program;
+    QString command = "sudo -S " + program;
     QString pass = ui->rootPassword->text();
     QByteArray password = pass.toUtf8();
     process->start(command);
